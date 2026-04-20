@@ -1,0 +1,6 @@
+{
+  "Name": "DHL_knowledge_bot",
+  "ProjectType": "Process",
+  "Description": "testing RPA for DHL challenge\r\n",
+  "MainFile": "Main.xaml"
+}
