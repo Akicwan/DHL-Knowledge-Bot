@@ -4,8 +4,12 @@
   "description": "testing RPA for DHL challenge\r\n",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[3.1.0-preview]",
     "UiPath.IntegrationService.Activities": "[1.25.0]",
-    "UiPath.System.Activities": "[26.2.4]"
+    "UiPath.IntelligentOCR.Activities": "[7.1.0-preview]",
+    "UiPath.OCR.Activities": "[4.1.0-preview]",
+    "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.30]"
   },
   "webServices": [],
   "entitiesStores": [],

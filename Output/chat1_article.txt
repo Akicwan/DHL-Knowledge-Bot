@@ -1,10 +1,10 @@
-Title: Investigating Shipment Delayed at KL Hub and Customer Update
+Title: Investigating Shipment Delay at KL Hub and Customer Update Deadline
 Category: Shipment Delay
 Source File: chat1.txt
-Processed Date: 21 Apr 2026 15:40
+Processed Date: 21 Apr 2026 18:12
 
 Summary:
-Shipment is delayed and has been stuck at KL Hub since yesterday. Check the tracking status urgently and provide an updated delivery status to the customer before 5 PM.
+Shipment is delayed and appears to be stuck at KL Hub since yesterday. Check the tracking status and provide an updated delivery timeline to the customer by 5 PM.
 
 Processed Message:
 
@@ -14,9 +14,8 @@ Please check tracking and update customer before 5 PM.
 Aina
 
 Suggested SOP / KB Steps:
-Check shipment tracking status in DHL system.  
-Confirm latest scan and location at KL Hub.  
-Identify reason for delay and expected movement or delivery date.  
-Escalate to operations team if no movement or unclear delay reason.  
-Update customer with current status and next steps before 5 PM.  
-Record communication and action taken in case log.
+Verify shipment status in DHL tracking system.  
+Confirm latest scan and delay reason at KL Hub.  
+Check for required actions or clearance to move shipment.  
+Contact relevant operations team if manual intervention is needed.  
+Update customer with current status and next steps before 5 PM.

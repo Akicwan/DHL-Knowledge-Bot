@@ -1,0 +1,24 @@
+Title: Handling Illegible or Corrupted Shipment Documentation in Operations
+Category: General Operations
+Source File: Screenshot 2026-04-21 170718.png
+Processed Date: 21 Apr 2026 18:12
+
+Summary:
+The message content is unreadable or corrupted, preventing identification of the operational issue. Please provide a clear version of the request so the issue can be assessed and appropriate action defined.
+
+Processed Message:
+_ TTT TT Fm
+|
+| Se ERE ME: |
+| GHD TED
+)
+[
+NE.
+
+Suggested SOP / KB Steps:
+1. Receive and log TTT TT Fm operational message.  
+2. Verify message source and authenticity.  
+3. Decode and interpret Se ERE ME and GHD TED fields.  
+4. Identify required operational actions from message content.  
+5. Escalate unclear or incomplete data to supervisor.  
+6. Record actions taken and file message for audit.

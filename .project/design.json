@@ -3,6 +3,7 @@
   "SeparateRuntimeDependencies": true,
   "IncludeSources": true,
   "ConnectorKeys": [
-    "uipath-uipath-airdk"
+    "uipath-uipath-airdk",
+    "uipath-microsoft-vision"
   ]
 }
