@@ -2,5 +2,7 @@
   "Tags": [],
   "SeparateRuntimeDependencies": true,
   "IncludeSources": true,
-  "ConnectorKeys": []
+  "ConnectorKeys": [
+    "uipath-uipath-airdk"
+  ]
 }
