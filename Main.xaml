@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C8DD9E76A83_v2_sub_generateChatCompletion_Create.Bundle;assembly=C8DD9E76A83_v2_sub_g.cAtqsc1E2R1lsWOD10eile1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -30,6 +30,13 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C8DD9E76A83_v2_sub_generateChatCompletion_Create.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -81,10 +88,28 @@
       <AssemblyReference>System.IO.Packaging</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>C8DD9E76A83_v2_sub_g.cAtqsc1E2R1lsWOD10eile1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="537,660" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="537,4449" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="generatedTitle" />
+      <Variable x:TypeArguments="x:String" Name="summaryText" />
+      <Variable x:TypeArguments="x:String" Name="articleContent" />
+      <Variable x:TypeArguments="x:String" Name="articleTitle" />
+      <Variable x:TypeArguments="x:String" Name="category" />
+      <Variable x:TypeArguments="x:String" Name="cleanText" />
       <Variable x:TypeArguments="x:String" Name="rawText" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -92,7 +117,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\User\Documents\UiPath\DHL_knowledge_bot\Input" sap:VirtualizedContainerService.HintSize="484,637" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\User\Documents\UiPath\DHL_knowledge_bot\Input" sap:VirtualizedContainerService.HintSize="520,4426" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -101,17 +126,331 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,4139" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="stepsText" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadTextFile File="{x:Null}" Content="[rawText]" DisplayName="Read Text File" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[rawText]" />
+            <ui:ReadTextFile File="{x:Null}" Content="[rawText]" DisplayName="Read Text File" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="452,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[cleanText]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[rawText.Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[cleanText]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[cleanText.Replace("Hi team,", "").Replace("Thanks,", "").Replace("Regards,", "")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[cleanText]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[cleanText.Replace(vbCrLf &amp; vbCrLf, vbCrLf)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Cleaned text: &quot; + cleanText]" />
+            <If Condition="[cleanText.ToLower.Contains(&quot;delay&quot;) Or cleanText.ToLower.Contains(&quot;stuck&quot;) Or cleanText.ToLower.Contains(&quot;shipment&quot;)]" sap:VirtualizedContainerService.HintSize="452,591" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[category]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Shipment Delay"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[category]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["General Operations"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Category: &quot; + category]" />
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="4723ca08-64c1-450c-8003-c48dd9e76a83" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["You are helping create DHL internal knowledge articles." + vbCrLf +
+"Summarize the following logistics or operations issue in 1 to 2 concise sentences." + vbCrLf +
+"Focus only on the key issue and the required action." + vbCrLf +
+"Do not include greetings or signatures." + vbCrLf + vbCrLf +
+"Category: " + category + vbCrLf +
+"Message:" + vbCrLf +
+cleanText]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">None</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+                <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+                <isactr:FieldObject Name="max_tokens" Type="FieldArgument" />
+                <isactr:FieldObject Name="temperature" Type="FieldArgument" />
+                <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+                <isactr:FieldObject Name="presence_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="n" Type="FieldArgument" />
+                <isactr:FieldObject Name="top_p" Type="FieldArgument" />
+                <isactr:FieldObject Name="_stop" Type="FieldArgument" />
+                <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">gpt-5.1-2025-11-13</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[summaryText]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;LLM Summary: &quot; + summaryText]" />
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="4723ca08-64c1-450c-8003-c48dd9e76a83" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["Generate a short, professional DHL knowledge base article title." + vbCrLf +
+"Keep it under 10 words." + vbCrLf +
+"Do not include file names." + vbCrLf + vbCrLf +
+"Category: " + category + vbCrLf +
+"Message:" + vbCrLf +
+cleanText]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">None</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+                <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+                <isactr:FieldObject Name="max_tokens" Type="FieldArgument" />
+                <isactr:FieldObject Name="temperature" Type="FieldArgument" />
+                <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+                <isactr:FieldObject Name="presence_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="n" Type="FieldArgument" />
+                <isactr:FieldObject Name="top_p" Type="FieldArgument" />
+                <isactr:FieldObject Name="_stop" Type="FieldArgument" />
+                <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">gpt-5.1-2025-11-13</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[generatedTitle]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;LLM Title: &quot; + generatedTitle]" />
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="4723ca08-64c1-450c-8003-c48dd9e76a83" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="452,424" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["Rewrite this DHL operational issue into 4 to 6 SOP steps." + vbCrLf +
+"Use short imperative sentences." + vbCrLf +
+"Return only the steps, one per line." + vbCrLf +
+"Do not include explanation." + vbCrLf + vbCrLf +
+"Category: " + category + vbCrLf +
+"Message:" + vbCrLf +
+cleanText]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">None</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+                <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+                <isactr:FieldObject Name="max_tokens" Type="FieldArgument" />
+                <isactr:FieldObject Name="temperature" Type="FieldArgument" />
+                <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+                <isactr:FieldObject Name="presence_penalty" Type="FieldArgument" />
+                <isactr:FieldObject Name="n" Type="FieldArgument" />
+                <isactr:FieldObject Name="top_p" Type="FieldArgument" />
+                <isactr:FieldObject Name="_stop" Type="FieldArgument" />
+                <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">gpt-5.1-2025-11-13</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[stepsText]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;LLM Steps: &quot; + stepsText]" />
+            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[articleTitle]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[generatedTitle]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[articleContent]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">["Title: " + generatedTitle + vbCrLf +
+"Category: " + category + vbCrLf +
+"Source File: " + CurrentFile.Name + vbCrLf +
+"Processed Date: " + Now.ToString("dd MMM yyyy HH:mm") + vbCrLf + vbCrLf +
+"Summary:" + vbCrLf + summaryText + vbCrLf + vbCrLf +
+"Processed Message:" + vbCrLf + cleanText + vbCrLf + vbCrLf +
+"Suggested SOP / KB Steps:" + vbCrLf +
+stepsText]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[&quot;Output\&quot; + System.IO.Path.GetFileNameWithoutExtension(CurrentFile.Name) + &quot;_article.txt&quot;]" sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[articleContent]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Article created: &quot; + generatedTitle]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachFileX>
   </Sequence>
 </Activity>

@@ -1,1 +1,9 @@
-testing 1
+Hi,
+
+Customer mentioned that invoice number INV-2034 is incorrect.
+The amount charged does not match the agreed contract price.
+
+Please check with finance team and confirm.
+
+Thanks,
+Farid

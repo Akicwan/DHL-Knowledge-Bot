@@ -4,6 +4,7 @@
   "description": "testing RPA for DHL challenge\r\n",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.IntegrationService.Activities": "[1.25.0]",
     "UiPath.System.Activities": "[26.2.4]"
   },
   "webServices": [],

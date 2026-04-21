@@ -1,0 +1,22 @@
+Title: Dispute on Incorrect Invoice Amount Versus Contract Price
+Category: General Operations
+Source File: testing1.txt
+Processed Date: 21 Apr 2026 15:40
+
+Summary:
+Customer reports that invoice INV-2034 is incorrect because the charged amount does not match the agreed contract price. Please review the invoice with the Finance team and confirm or correct the billing amount.
+
+Processed Message:
+Hi,
+Customer mentioned that invoice number INV-2034 is incorrect.
+The amount charged does not match the agreed contract price.
+Please check with finance team and confirm.
+
+Farid
+
+Suggested SOP / KB Steps:
+Verify customer complaint about invoice INV-2034.  
+Retrieve agreed contract price and compare with invoiced amount.  
+Escalate discrepancy to Finance team with full invoice and contract details.  
+Request Finance team to validate charges and correct invoice if required.  
+Confirm outcome with customer and provide updated invoice or clarification.
