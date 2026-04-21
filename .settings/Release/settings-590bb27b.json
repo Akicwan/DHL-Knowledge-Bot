@@ -1,0 +1,12 @@
+﻿{
+  "DefaultOCREngine": "UiPath.OCR.Activities.UiPathDocumentOCR, UiPath.OCR.Activities",
+  "UiPath.OCR.Activities.UiPathScreenOCR.Endpoint": "https://ocr.uipath.com/",
+  "UiPath.OCR.Activities.UiPathScreenOCR.ApiKey": "",
+  "UiPath.OCR.Activities.UiPathScreenOCR.UseAccents": "True",
+  "UiPath.OCR.Activities.UiPathDocumentOCR.Endpoint": "https://du.uipath.com/ocr",
+  "UiPath.OCR.Activities.UiPathDocumentOCR.ApiKey": "",
+  "UiPath.OCR.Activities.CjkOCR.Endpoint": "https://du.uipath.com/cjk-ocr",
+  "UiPath.OCR.Activities.CjkOCR.ApiKey": "",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.Endpoint": "https://du.uipath.com/extended-ocr",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.ApiKey": ""
+}

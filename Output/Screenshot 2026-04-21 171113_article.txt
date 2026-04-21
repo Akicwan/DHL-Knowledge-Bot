@@ -1,0 +1,19 @@
+Title: Shipment Delay at Kentucky Hub: 36-Hour Hold Notification
+Category: Shipment Delay
+Source File: Screenshot 2026-04-21 171113.png
+Processed Date: 21 Apr 2026 18:13
+
+Summary:
+A shipment has been delayed at the KY Hub X for 36 hours. Investigate the cause of the delay at the hub and take corrective action to resume movement of the shipment.
+
+Processed Message:
+ohipmentiDelayINoticel
+been)delayedfat{KYHubXforg36 hours
+
+Suggested SOP / KB Steps:
+1. Identify shipment delayed at KY Hub X for over 36 hours.  
+2. Verify delay details in tracking and hub operations system.  
+3. Notify customer and relevant stakeholders of the delay.  
+4. Investigate root cause of delay at KY Hub X.  
+5. Implement corrective actions to move shipment to next transit point.  
+6. Update tracking status and confirm new expected delivery time.

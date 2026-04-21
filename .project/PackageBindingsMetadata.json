@@ -834,6 +834,146 @@
         "FromInstanceProperty": "BindingsJson",
         "DefaultValueSource": "Property"
       }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.Artifacts.CreateDocumentValidationArtifacts\u00601": [
+      {
+        "Type": "bucket",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "OrchestratorFolderName",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.CreateClassificationValidationAction": [
+      {
+        "Type": "bucket",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "OrchestratorFolderName",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.CreateClassificationValidationActionAndWait": [
+      {
+        "Type": "bucket",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "OrchestratorFolderName",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.CreateValidationAction\u00601": [
+      {
+        "Type": "bucket",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "OrchestratorFolderName",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.ValidateDocumentDataWithDocumentData\u00601": [
+      {
+        "Type": "bucket",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "OrchestratorFolderName",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
     ]
   }
 }
