@@ -1,24 +1,22 @@
-Title: Handling Illegible or Corrupted Shipment Documentation in Operations
-Category: General Operations
+Title: Investigating Shipment Delays at KL Hub and Customer Updates
+Category: Shipment Delay
 Source File: Screenshot 2026-04-21 170718.png
-Processed Date: 21 Apr 2026 18:12
+Processed Date: 06 May 2026 12:51
 
 Summary:
-The message content is unreadable or corrupted, preventing identification of the operational issue. Please provide a clear version of the request so the issue can be assessed and appropriate action defined.
+Parcel is delayed and has been stuck at KL Hub since yesterday. Check the shipment tracking status and provide an updated delivery timeline to the customer before 5 PM.
 
 Processed Message:
-_ TTT TT Fm
-|
-| Se ERE ME: |
-| GHD TED
-)
-[
-NE.
+
+Customer reported that parcel has been stuck at KL Hub since yesterday.
+Please check tracking and update customer before 5 PM.
+
+Aina
 
 Suggested SOP / KB Steps:
-1. Receive and log TTT TT Fm operational message.  
-2. Verify message source and authenticity.  
-3. Decode and interpret Se ERE ME and GHD TED fields.  
-4. Identify required operational actions from message content.  
-5. Escalate unclear or incomplete data to supervisor.  
-6. Record actions taken and file message for audit.
+Check shipment tracking status in DHL system.  
+Verify latest scan and location at KL Hub.  
+Identify cause of delay and expected movement or delivery date.  
+Escalate to operations or KL Hub team if no movement or unclear status.  
+Prepare a clear status update with next steps for the customer.  
+Send update to the customer and record communication before 5 PM.

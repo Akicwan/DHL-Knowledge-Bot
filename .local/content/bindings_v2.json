@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_2",
+      "resource": "Connection",
+      "key": "4723ca08-64c1-450c-8003-c48dd9e76a83",
+      "id": "Connection4723ca08-64c1-450c-8003-c48dd9e76a834723ca08-64c1-450c-8003-c48dd9e76a83False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "4723ca08-64c1-450c-8003-c48dd9e76a83",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    }
+  ]
+}

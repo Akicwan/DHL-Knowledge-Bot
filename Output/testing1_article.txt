@@ -1,10 +1,10 @@
-Title: Disputed Invoice Amount Review and Finance Team Coordination
+Title: Dispute: Incorrect Invoice Amount vs. Contracted Rate
 Category: General Operations
 Source File: testing1.txt
-Processed Date: 21 Apr 2026 18:13
+Processed Date: 06 May 2026 12:51
 
 Summary:
-Customer reports that invoice INV-2034 is incorrect because the charged amount does not match the agreed contract price. Please coordinate with the Finance team to verify the invoice and confirm or correct the billing amount.
+Customer reports that invoice INV-2034 is incorrect because the charged amount does not match the agreed contract price. Please verify the pricing with the finance team and confirm or correct the invoice accordingly.
 
 Processed Message:
 Hi,
@@ -15,9 +15,9 @@ Please check with finance team and confirm.
 Farid
 
 Suggested SOP / KB Steps:
-Verify invoice INV-2034 details in the billing system.  
-Compare invoiced charges against the customer contract pricing.  
-Identify any discrepancies between billed and contracted amounts.  
-Coordinate with the finance team to validate pricing and resolve differences.  
-Update the invoice as needed and obtain internal approval if adjustments are required.  
-Confirm the outcome and corrected amount with the customer.
+Receive customer complaint about incorrect invoice INV-2034 and log the issue.  
+Verify invoice details against the customer’s contract pricing and terms.  
+Escalate discrepancy to the finance team with invoice, contract, and variance details.  
+Coordinate with finance to confirm the correct amount and required invoice adjustments.  
+Update the customer with the confirmed outcome and provide revised invoice if applicable.  
+Close the case and record the resolution in the relevant tracking system.

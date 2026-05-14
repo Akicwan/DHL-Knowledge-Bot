@@ -8,6 +8,15 @@
         "hash": "WURZQ0EydURWdHVvSVJpeXlsS2RvRGlMeDdnNncxUGI5N05EQlIzRzg5TFNBaHpJNjdvb2d2NDU4eHN2R3l6YWsxWDFodEJ3Y1BETGlmVUtSckFrRFE9PQ",
         "assemblyName": "C8DD9E76A83_v2_sub_g.cAtqsc1E2R1lsWOD10eile1"
       }
+    },
+    "C0C057BAD2F_v2_sub_c.Z3OPT1RkUPQ1Kkx4Q1ndghl2": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.C0C057BAD2F_v2_sub_chat_sub_completion_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C0C057BAD2F_v2_sub_chat_sub_completion_Create",
+        "hash": "STgyM2NQWnhQSnNyYnJ0bWtaTzVZditBMys0dkM2MXkrak9hV2dlb1pFSEtUNklYR0ZINGlqM1pTSStCQ24wUTV1ME1seFdhRkt6a2hBdUVxWEdLUkE9PQ",
+        "assemblyName": "C0C057BAD2F_v2_sub_c.Z3OPT1RkUPQ1Kkx4Q1ndghl2"
+      }
     }
   }
 }

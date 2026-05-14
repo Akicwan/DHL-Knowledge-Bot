@@ -1,19 +1,21 @@
-Title: Shipment Delay at Kentucky Hub: 36-Hour Hold Notification
+Title: Shipment Delayed at KL Hub – Tracking Review Required
 Category: Shipment Delay
 Source File: Screenshot 2026-04-21 171113.png
-Processed Date: 21 Apr 2026 18:13
+Processed Date: 06 May 2026 12:51
 
 Summary:
-A shipment has been delayed at the KY Hub X for 36 hours. Investigate the cause of the delay at the hub and take corrective action to resume movement of the shipment.
+Shipment is delayed and has been held at KL Hub since yesterday. Check the shipment tracking status and provide an updated delivery status to the customer before 5 PM.
 
 Processed Message:
-ohipmentiDelayINoticel
-been)delayedfat{KYHubXforg36 hours
+
+Customer reported that parcel has been stuck at KL Hub since yesterday.
+Please check tracking and update customer before 5 PM.
+
+Aina
 
 Suggested SOP / KB Steps:
-1. Identify shipment delayed at KY Hub X for over 36 hours.  
-2. Verify delay details in tracking and hub operations system.  
-3. Notify customer and relevant stakeholders of the delay.  
-4. Investigate root cause of delay at KY Hub X.  
-5. Implement corrective actions to move shipment to next transit point.  
-6. Update tracking status and confirm new expected delivery time.
+Check shipment tracking status in the DHL system.  
+Verify latest scan event and reason for delay at KL Hub.  
+Contact KL Hub or relevant operations team if clarification is needed.  
+Record updated status and expected movement or delivery date.  
+Inform customer of the latest status and next steps before 5 PM.

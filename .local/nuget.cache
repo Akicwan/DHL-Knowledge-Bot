@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c1SWz+qjOCA=",
+  "dgSpecHash": "/Y/TCcyGN5s=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Documents\\UiPath\\DHL_knowledge_bot\\.local\\",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\bitmiracle.docotic.pdf\\9.8.19642-dev\\bitmiracle.docotic.pdf.9.8.19642-dev.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\bitmiracle.docotic.pdf.htmltopdf\\9.8.19642-dev\\bitmiracle.docotic.pdf.htmltopdf.9.8.19642-dev.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
@@ -105,6 +106,7 @@
     "C:\\Users\\User\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\polly.contrib.waitandretry.1.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\radcommons.core\\2.0.1\\radcommons.core.2.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.3.0\\runtime.any.system.diagnostics.tracing.4.3.0.nupkg.sha512",
@@ -156,7 +158,7 @@
     "C:\\Users\\User\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0\\runtime.win.system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtime.win.system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.activities.viewmodels\\1.20260318.6\\system.activities.viewmodels.1.20260318.6.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.activities.viewmodels\\1.20260324.1\\system.activities.viewmodels.1.20260324.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
@@ -285,7 +287,7 @@
     "C:\\Users\\User\\.nuget\\packages\\uipath.errorinfo\\25.10.2\\uipath.errorinfo.25.10.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.integration.api.client\\1.172.8\\uipath.integration.api.client.1.172.8.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\uipath.integrationservice.activities\\1.25.0\\uipath.integrationservice.activities.1.25.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\uipath.integrationservice.activities\\1.26.0\\uipath.integrationservice.activities.1.26.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.integrationservice.adapters\\1.1.0\\uipath.integrationservice.adapters.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.integrationservice.client\\1.1.0\\uipath.integrationservice.client.1.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.intelligentocr.activities\\7.1.0-preview\\uipath.intelligentocr.activities.7.1.0-preview.nupkg.sha512",
@@ -302,6 +304,8 @@
     "C:\\Users\\User\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.30\\uipath.uiautomation.activities.runtime.design.25.10.30.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.30\\uipath.uiautomation.design.recoverypanel.25.10.30.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.vision\\4.0.0-preview\\uipath.vision.4.0.0-preview.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\uipath.webapi.activities\\2.5.0-preview\\uipath.webapi.activities.2.5.0-preview.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.5.0-preview\\uipath.webapi.activities.runtime.2.5.0-preview.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\uipath.wordstonumbers.1.0.0.nupkg.sha512"
   ],
   "logs": []
